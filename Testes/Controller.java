@@ -2,7 +2,7 @@ package Testes;
 
 import java.util.Scanner;
 
-import Lista1_Revisão.Ex005;
+import Lista1_Revisão.Produto;
 public class Controller {
     // Crie uma classe para o seguinte diagrama de classe UML
     // Classe controller com um método main que instancia um objeto da classe Produto e testa os métodos criados.
@@ -40,7 +40,7 @@ public class Controller {
                         System.out.println("Por favor, preencha todos os campos.");
                         continue;
                     } else {
-                        Ex005 newProduto = new Ex005(descricao, preco, quant);
+                        Produto newProduto = new Produto(descricao, preco, quant);
                         System.out.println("Produto cadastrado com sucesso!");
                         System.out.println("--------------PRODUTO---------------");
                         System.out.println(newProduto);

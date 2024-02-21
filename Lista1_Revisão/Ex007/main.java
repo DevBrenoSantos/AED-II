@@ -6,6 +6,7 @@ import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.time.LocalDate;
 import java.util.Scanner;
 
 public class main {
@@ -17,6 +18,8 @@ public class main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         int opcao;
+
+        // Menu de opções para definir a ação a ser realizada
         do {
             System.out.println("1 - Escrever em um arquivo");
             System.out.println("2 - Ler um arquivo e mostrar a soma dos números");
@@ -24,6 +27,7 @@ public class main {
             System.out.print("Opção: ");
             opcao = input.nextInt();
 
+            // Encerramento do programa, caso solicitado
             if (opcao == 0) {
                 System.out.println("Fim do programa.");
                 System.exit(0);
@@ -41,8 +45,10 @@ public class main {
                     break;
             }
         } while (opcao != 0);
+        input.close();
     }
 
+    // Método para inserir os números no documento
     public static void escreverNumeros() {
         try {
             Scanner input = new Scanner(System.in);
@@ -55,12 +61,14 @@ public class main {
             writer.close();
 
             System.out.println("Números gravados no arquivo com sucesso.");
+            input.close();
         } catch (IOException e) {
             System.out.println("Erro ao escrever no arquivo: " + e.getMessage());
 
         }
     }
 
+    // Método para ler e exibir a soma do números inseridos no documento
     public static void lerArquivo_e_ExibirSoma() {
         try {
             BufferedReader reader = new BufferedReader(new FileReader("numeros.txt"));
