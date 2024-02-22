@@ -1,6 +1,8 @@
 // Breno Amaral Santos - C02177
 package Lista1_Revisão;
 
+import Lista1_Revisão.Ex007.main;
+
 public class Produto {
     // Crie uma classe para o seguinte diagrama de classe UML
     private int id;
@@ -41,6 +43,11 @@ public class Produto {
     public void setQuant(int q) {
         this.quant = q;
     }
+
+    public float getPreco() {
+        return preco;
+    }
+
     Produto() {
         
     }
