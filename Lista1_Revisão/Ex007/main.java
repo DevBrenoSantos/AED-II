@@ -6,10 +6,9 @@ import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.time.LocalDate;
 import java.util.Scanner;
 
-public class main {
+public class Main {
     // Crie um programa que ofereça ao usuário as seguintes opções:
     // a) Crie um procedimento que escreva em um arquivo texto números digitados
     // pelo usuário.

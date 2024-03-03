@@ -1,12 +1,10 @@
 // Breno Amaral Santos - C02177
 package Lista1_Revisão;
 
-import Lista1_Revisão.Ex007.main;
-
 public class Produto {
     // Crie uma classe para o seguinte diagrama de classe UML
     private int id;
-    private String descricao;
+    private String descricao = "";
     private float preco;
     private int quant;
     private static int cont = 0;
@@ -49,6 +47,10 @@ public class Produto {
     }
 
     Produto() {
-        
+
+    }
+
+    public String toString() {
+        return "ID: " + id + "\nDescrição: " + descricao + "\nPreço: " + preco + "\nQuantidade: " + quant;
     }
 }
