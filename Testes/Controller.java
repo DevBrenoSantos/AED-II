@@ -69,6 +69,6 @@ public class Controller {
             default:
                 break;
         }
-
+        input.close();
     }
 }
