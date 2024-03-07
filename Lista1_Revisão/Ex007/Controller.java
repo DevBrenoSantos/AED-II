@@ -8,7 +8,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class Main {
+public class Controller {
     // Crie um programa que ofereça ao usuário as seguintes opções:
     // a) Crie um procedimento que escreva em um arquivo texto números digitados
     // pelo usuário.
