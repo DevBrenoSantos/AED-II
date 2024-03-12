@@ -4,12 +4,13 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.Collections;
+
 public class Pesquisa {
     public static void main(String[] args) {
         ArrayList<String> Lstring = new ArrayList<String>();
         Collections.sort(Lstring);
     }
-    
+
     public static ArrayList<String> addArray(List<String> Lstring) {
         Scanner input = new Scanner(System.in);
         String nome;
@@ -23,19 +24,20 @@ public class Pesquisa {
                 Lstring.add(nome);
             }
         } while (nome.equalsIgnoreCase("STOP"));
-    
+
         input.close();
-        return (ArrayList<String>) Lstring; 
+        return (ArrayList<String>) Lstring;
     }
 
     public static void imprimirArray(List<String> Lstring) {
-        for (int i=0; i <= Lstring.size(); i++) {
+        for (int i = 0; i <= Lstring.size(); i++) {
             System.out.println(Lstring);
         }
     }
 
     public boolean pesquisaSequencial(String busca, List<String> Lstring) {
-        for (@SuppressWarnings("unused") String str : Lstring) {
+        for (@SuppressWarnings("unused")
+        String str : Lstring) {
             if (Lstring.equals(busca)) {
                 return true;
 
@@ -46,9 +48,9 @@ public class Pesquisa {
 
     public boolean pesquisaBinaria(String busca, List<String> Lstring) {
         Collections.sort(Lstring);
-        int dir = (Lstring.size() -1), esq = 0, meio;
+        int dir = (Lstring.size() - 1), esq = 0, meio;
         while (esq <= dir) {
-            meio = (esq + dir)/2;
+            meio = (esq + dir) / 2;
             int comparacao = busca.compareTo(Lstring.get(meio));
             if (comparacao == 0) {
                 return true;
@@ -64,7 +66,7 @@ public class Pesquisa {
 
     public void removerSequencial(String busca, List<String> Lstring) {
         String verf = null;
-        for (int i=0; i<=Lstring.size(); i++) {
+        for (int i = 0; i <= Lstring.size(); i++) {
             if (Lstring.get(i).equalsIgnoreCase(busca)) {
                 Lstring.remove(i);
                 verf = "Encontrado";
@@ -79,10 +81,10 @@ public class Pesquisa {
 
     public void removerBinario(String busca, List<String> Lstring) {
         Collections.sort(Lstring);
-        int dir = (Lstring.size() -1), esq = 0, meio;
+        int dir = (Lstring.size() - 1), esq = 0, meio;
         String verf = null;
         while (esq <= dir) {
-            meio = (esq + dir)/2;
+            meio = (esq + dir) / 2;
             int comparacao = busca.compareTo(Lstring.get(meio));
             if (comparacao == 0) {
                 Lstring.remove(meio);
