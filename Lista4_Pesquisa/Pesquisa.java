@@ -9,6 +9,24 @@ public class Pesquisa {
     public static void main(String[] args) {
         ArrayList<String> Lstring = new ArrayList<String>();
         Collections.sort(Lstring);
+        String nome = "Breno";
+        addArray(Lstring);
+
+        imprimirArray(Lstring);
+
+        pesquisaSequencial(nome, Lstring);
+
+        removerSequencial(nome, Lstring);
+
+        imprimirArray(Lstring);
+
+        addArray(Lstring);
+
+        pesquisaBinaria(nome, Lstring);
+
+        removerBinario(nome, Lstring);
+
+        imprimirArray(Lstring);
     }
 
     public static ArrayList<String> addArray(List<String> Lstring) {
@@ -35,7 +53,7 @@ public class Pesquisa {
         }
     }
 
-    public boolean pesquisaSequencial(String busca, List<String> Lstring) {
+    public static boolean pesquisaSequencial(String busca, List<String> Lstring) {
         for (@SuppressWarnings("unused")
         String str : Lstring) {
             if (Lstring.equals(busca)) {
@@ -46,7 +64,7 @@ public class Pesquisa {
         return false;
     }
 
-    public boolean pesquisaBinaria(String busca, List<String> Lstring) {
+    public static boolean pesquisaBinaria(String busca, List<String> Lstring) {
         Collections.sort(Lstring);
         int dir = (Lstring.size() - 1), esq = 0, meio;
         while (esq <= dir) {
@@ -64,7 +82,7 @@ public class Pesquisa {
         return false;
     }
 
-    public void removerSequencial(String busca, List<String> Lstring) {
+    public static void removerSequencial(String busca, List<String> Lstring) {
         String verf = null;
         for (int i = 0; i <= Lstring.size(); i++) {
             if (Lstring.get(i).equalsIgnoreCase(busca)) {
@@ -79,7 +97,7 @@ public class Pesquisa {
         }
     }
 
-    public void removerBinario(String busca, List<String> Lstring) {
+    public static void removerBinario(String busca, List<String> Lstring) {
         Collections.sort(Lstring);
         int dir = (Lstring.size() - 1), esq = 0, meio;
         String verf = null;
