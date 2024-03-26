@@ -7,7 +7,6 @@ public class Gestor extends Empregado {
     // Constructor
     public Gestor(int id, String nome, float salario) throws Exception {
         super(id, nome, salario);
-        //TODO Auto-generated constructor stub
     }
 
     public int getNivel() {

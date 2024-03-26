@@ -53,6 +53,7 @@ public class Pesquisa {
         }
     }
 
+    @SuppressWarnings("unlikely-arg-type")
     public static boolean pesquisaSequencial(String busca, List<String> Lstring) {
         for (@SuppressWarnings("unused")
         String str : Lstring) {
@@ -60,6 +61,7 @@ public class Pesquisa {
                 return true;
 
             }
+            System.out.println(busca);
         }
         return false;
     }
