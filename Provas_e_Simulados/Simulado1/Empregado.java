@@ -1,4 +1,4 @@
-package Simulados.Simulado1;
+package Provas_e_Simulados.Simulado1;
 
 public class Empregado {
     private int id;
