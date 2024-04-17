@@ -18,6 +18,6 @@ public class alocamentoUnsafeTest {
         long mem = unsafe.allocateMemory(size);
         unsafe.putAddress(0x0000000704a0000, ten);
         long readValue = unsafe.getAddress(mem);
-        System.out.println("Value: " + readValue);
+        System.out.println("Value: " + readValue); 
     }
 }

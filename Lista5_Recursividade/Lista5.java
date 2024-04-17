@@ -3,7 +3,7 @@ public class Lista5 {
        int[] lista = {
             1, 2, 3, 4, 5, 6, 7, 8, 9, 10
         };
-        // ex1(lista, lista.length);
+        ex1(lista, lista.length);
         // System.out.println(ex2(4, 2));
         // System.out.println(ex3(500));
         // System.out.println(ex4(1234));
