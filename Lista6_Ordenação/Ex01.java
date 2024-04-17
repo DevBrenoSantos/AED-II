@@ -11,18 +11,9 @@ public class Ex01 {
     public static void main(String[] args) throws InterruptedException{
         // Recursos adicionais
         long start = System.currentTimeMillis();
-        // Pausa de 2 segundos
-        System.out.println("Iniciando programa");
-        Thread.sleep(500);
-        System.out.println("1...");
-        Thread.sleep(500);
-        System.out.println("2...");
-        Thread.sleep(500);
-        System.out.println("3...");
-        Thread.sleep(500);
+
         // Inicio timer Não Eficientes
         long startTimeIneficientes = System.nanoTime();
-
 
         // -------------BUBLLESORT--------------
         double vetBublle[]= gerarAleatorio(10000, 1, 50000);
