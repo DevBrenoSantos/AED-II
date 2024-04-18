@@ -1,7 +1,7 @@
 package Lista6_Ordenação.NãoEficientes;
 
-public class BublleSort {
-    public static double[] bublleSort(double[] vet) {
+public class BubbleSort {
+    public static double[] bubbleSort(double[] vet) {
         double aux;
         int n=vet.length;
         for (int i = n-1; i>0; i--) {

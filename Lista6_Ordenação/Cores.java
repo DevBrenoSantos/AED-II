@@ -1,5 +1,4 @@
 package Lista6_Ordenação;
-
 public class Cores {
     // Reset
     public static final String RESET = "\033[0m";  // Text Reset
@@ -75,6 +74,6 @@ public class Cores {
     public static final String WHITE_BACKGROUND_BRIGHT = "\033[0;107m";   // WHITE
 
     public static void main(String[] args) {
-        System.out.println(PURPLE + "Testando impressão de cores" + RESET);
+        System.out.println(GREEN_BACKGROUND_BRIGHT + "Hello, World!" + RESET);
     }
 }
