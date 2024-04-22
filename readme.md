@@ -15,6 +15,12 @@ Pasta de exercícios sobre tratamento e captura de exceções
 - **Lista4_Pesquisa**
 Pasta de exercícios sobre pesquisa sequencial e binária
 
+- **Lista5_Recursividade** 
+Pasta de exercícos sobre recursividade
+
+- **Lista6_Ordenação**
+Pasta de exercícios sobre métodos de ordenação
+
 - **Provas_e_Simulados**
 Pasta que contém a as provas e simulados da matéria
 
