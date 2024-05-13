@@ -1,6 +1,6 @@
-package Lista6_Ordenação;
+package TerminalColors;
 
-public class Cores {
+public class Colors {
     // Reset
     public static final String RESET = "\033[0m";  // Text Reset
 
@@ -75,10 +75,10 @@ public class Cores {
     public static final String WHITE_BACKGROUND_BRIGHT = "\033[0;107m";   // WHITE
 
     public static void main(String[] args) {
-        imprimirTexto("Hello world!", PURPLE_BACKGROUND);
+        print("Hello world!", PURPLE_BACKGROUND);
     }
 
-    public static void imprimirTexto(String Text, String Color) {
+    public static void print(String Text, String Color) {
         System.out.println(Color+Text+RESET);
     }
 }
