@@ -29,7 +29,5 @@ public class mainClass {
 
         // Retornar o maior elemento da pilha
         System.out.println(pilhaTeste.maiorElemento());
-
-        
     }
 }
